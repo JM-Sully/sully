@@ -1,7 +1,8 @@
-glob: "**/*.{html,text,js}{+*,}.erb"
+EnableDefaultLinters: true
 linters:
   ErbSafety:
-    enabled: false
+    enabled: true
+    better_html_config: .better-html.yml
   Rubocop:
     enabled: true
     rubocop_config:
