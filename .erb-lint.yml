@@ -1,0 +1,9 @@
+glob: "**/*.{html,text,js}{+*,}.erb"
+linters:
+  ErbSafety:
+    enabled: false
+  Rubocop:
+    enabled: true
+    rubocop_config:
+      inherit_from:
+        - .rubocop.yml
