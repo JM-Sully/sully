@@ -35,7 +35,6 @@ ssh:
   user: root
   keys:
     - ~/.ssh/id_ed25519_new
-  shell: 'PATH=$PATH:/usr/bin:/bin:/usr/local/bin; bash -l'
 
 # Inject ENV variables into containers (secrets come from .kamal/secrets).
 env:
