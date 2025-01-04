@@ -35,6 +35,9 @@ ssh:
   user: root
   keys:
     - ~/.ssh/id_ed25519_new
+  forward_agent: true
+  environment:
+    PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
 # Inject ENV variables into containers (secrets come from .kamal/secrets).
 env:
